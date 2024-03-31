@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.game-dev-container {
+    background-image: linear-gradient(120deg, #84fab0, #8fd3f4, #ffcc00);
+    background-size: 400% 400%;
+    color: #103741;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.game-dev-title {
+    font-size: 5rem;
+    color: blue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: titleAnimation 2s ease infinite;
+}
+
+@keyframes titleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.game-dev-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.game-dev-image1,
+.game-dev-image2,
+.game-dev-image3,
+.game-dev-image4,
+.game-dev-image5,
+.game-dev-image6,
+.game-dev-image7 {
+    width: 100%;
+    height: auto;
+    margin: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
+}
+
+.game-dev-image1:hover,
+.game-dev-image2:hover,
+.game-dev-image3:hover,
+.game-dev-image4:hover,
+.game-dev-image5:hover,
+.game-dev-image6:hover,
+.game-dev-image7:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.game-dev-image2 {
+    width: 700px;
+    height: 200px;
+    float: right;
+}
+
+.game-dev-image3 {
+    width: 700px;
+    height: 300px;
+    float: right;
+}
+
+.game-dev-image7 {
+    object-fit: cover;
+}
+
+.game-dev-text {
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.game-dev-text p {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.game-dev-content {
+    display: flex;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer.game-dev-footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #103741;
+    color: #fff;
+}
+
+footer.game-dev-footer:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.game-dev-container {
+    position: relative;
+}
+
+.game-dev-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Data/img/bg4.jpeg');
+    background-blend-mode: multiply;
+    opacity: 0.2;
+}
+
+.game-dev-content {
+    transform: rotate(-2deg);
+}
+
+.game-dev-image-container {
+    perspective: 1000px;
+}
+
+.game-dev-image-container img {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.game-dev-image-container img:hover {
+    transform: rotateY(180deg);
+}
+
+.game-dev-text h2 {
+    font-size: 2.5rem;
+    color: #103741;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-dev-text p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.game-dev-content:last-child .game-dev-image-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.game-dev-content:last-child .game-dev-image-container img {
+    width: calc(25% - 20px);
+    height: auto;
+    margin: 10px;
+}
+
+.game-dev-content:last-child .game-dev-image-container img:hover {
+    transform: scale(1.1);
+}

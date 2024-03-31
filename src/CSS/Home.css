@@ -1,0 +1,440 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+
+:root {
+  --font-header: 'Roboto', sans-serif;
+  --font-title: 'Montserrat', sans-serif;
+  --font-text: 'Open Sans', sans-serif;
+}
+
+.clubName {
+  font-family: var(--font-header);
+}
+
+.whatWeDoSection h2,
+.whatWeDoSection p,
+.summaryTitle,
+h2.sweccMeetings,
+.summary,
+.meetingsSection p.meetingInfo,
+.meetingsSection p.meetingDetails,
+.web-dev-text h2,
+.web-dev-text p {
+  font-family: var(--font-title);
+}
+
+.homepage p,
+.web-dev-text p {
+  font-family: var(--font-text);
+}
+
+
+.clubName {
+  font-size: 4vw;
+  color: var(--text-header-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.whatWeDoSection p.summary {
+  font-size: 2rem;
+  font-weight: 100;
+  color: var(--text-color);
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.summaryTitle,
+h2.sweccMeetings {
+  font-size: 2.5rem;
+  color: var(--text-title-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.summary,
+.meetingsSection p.meetingInfo,
+.meetingsSection p.meetingDetails {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.homepage p {
+  font-size: 20px;
+  color: var(--text-color);
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.web-dev-text h2 {
+  font-size: 2.5rem;
+  color: #103741;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.web-dev-text p {
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.goal-title {
+  font-size: 3em;
+  color: var(--text-title-color);
+  font-family: var(--font-title);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.goal-text {
+  font-size: 30px;
+  color: var(--text-subtitle-color);
+  font-family: var(--font-text);
+  line-height: 52px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.clubTitleSection {
+  position: relative;
+  width: 100%;
+  height: 23vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), linear-gradient(0deg, rgba(190, 184, 235, 0.1), rgba(190, 184, 235, 0.1)), url(../Data/img/BackgroundImg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 30px 0;
+}
+
+.uw-logo,
+.clubName,
+.whatWeDoSection h2,
+.whatWeDoSection p {
+  animation: slide-up 0.5s ease-out;
+}
+
+.uw-logo {
+  width: 25%;
+  margin-top: 20px;
+}
+
+.clubName {
+  font-size: 4vw;
+  color: var(--text-header-color);
+}
+
+.whatWeDoSection {
+  background-color: var(--bg);
+  padding: 5rem 100px;
+  text-align: center;
+  margin: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  color: var(--text-title-color);
+}
+
+.summaryTitle,
+h2.sweccMeetings {
+  color: var(--text-title-color);
+  margin: 10px 0;
+}
+
+.summary,
+.meetingsSection p.meetingInfo,
+.meetingsSection p.meetingDetails {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.whatWeDoSection p.summary {
+  font-size: 2rem;
+  font-weight: 100;
+  color: var(--text-color);
+}
+
+.homepage p {
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.meetingsSection {
+  padding: 4rem 10rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-accent);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.meetingsInfoSection {
+  flex: 1;
+  padding: 20px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sweccMeetings {
+  font-size: 1.8rem;
+}
+h3.meetingTime {
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+.map-and-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  width: 400px;
+  height: auto;
+  margin: 30px 30px 0 30px;
+  border-radius: 8px;
+}
+
+.mapLabel {
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.sweccMeetings,
+.meetingInfo,
+.meetingDetails {
+  margin: 0;
+}
+
+.meetingTime {
+  margin: 0;
+  padding-top: 2vw;
+}
+
+.goal-message-section {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.goal-title {
+  font-size: 3em;
+  transform: translate(0%, -70%);
+  color: var(--text-title-color);
+}
+
+.goal-text {
+  text-align: center;
+  min-width: 10%;
+  max-width: 1000px;
+  max-height: 50%;
+  min-height: 20%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 52px;
+  transform: translate(0%, 10%);
+  color: var(--text-subtitle-color);
+}
+
+.posts {
+  margin: 50px 35px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--bg);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.instaPost {
+  margin: 15px 25px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.instaPost:hover {
+  transform: scale(1.05);
+}
+
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slide-up 0.5s ease-out;
+}
+
+
+@media (max-width: 1276px) {
+  .meetingsSection {
+    padding: 3rem 5rem;
+  }
+}
+
+@media (max-width: 1076px) {
+  .whatWeDoSection p.summary {
+    font-size: 1.5rem;
+  }
+
+  div.posts {
+    margin: 0;
+  }
+}
+
+@media (max-width: 976px) {
+  .meetingsSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summaryTitle {
+    font-size: 2rem;
+    margin: 30px;
+  }
+
+  .meetingsInfoSection {
+    align-items: center;
+    margin: 10px;
+  }
+
+  .meetingsSection p.meetingInfo,
+  .meetingsSection p.meetingDetails {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0 20px;
+  }
+
+  .map-and-label {
+    padding-right: 0;
+  }
+
+  .map {
+    width: 70%;
+  }
+}
+
+@media (max-width: 830px) {
+  .posts {
+    flex-direction: column;
+    padding: 2rem 5rem;
+  }
+
+  .instaPost {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .goal-message-section {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .goal-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.45em;
+    line-height: 78px;
+    padding-bottom: 40px;
+    color: var(--text-title-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .goal-text {
+    text-align: center;
+    max-width: 500px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 30px;
+    color: var(--text-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .whatWeDoSection,
+  .meetingsSection {
+    padding: 1rem;
+  }
+
+  .summaryTitle,
+  .sweccMeetings,
+  .meetingsInfoSection .meetingTime {
+    font-size: 1.5rem;
+  }
+
+  .whatWeDoSection p.summary,
+  .meetingsInfoSection p.meetingInfo,
+  .meetingsInfoSection p.meetingDetails {
+    font-size: 1rem;
+  }
+
+  h3.meetingTime {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .posts {
+    padding: 1.5rem;
+  }
+
+  .instaPost {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .clubTitleSection {
+    height: 30vw;
+    padding: 1rem 0;
+  }
+
+  .uw-logo {
+    width: 30%;
+  }
+
+  .clubName {
+    font-size: 5vw;
+    color: var(--text-header-color);
+  }
+}
+

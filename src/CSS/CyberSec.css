@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.cyber-sec-container {
+    background-image: linear-gradient(120deg, #84fab0, #8fd3f4, #ffcc00);
+    background-size: 400% 400%;
+    color: #103741;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.cyber-sec-title {
+    font-size: 5rem;
+    color: blue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: titleAnimation 2s ease infinite;
+}
+
+@keyframes titleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cyber-sec-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.cyber-sec-image1,
+.cyber-sec-image2,
+.cyber-sec-image3,
+.cyber-sec-image4,
+.cyber-sec-image5,
+.cyber-sec-image6,
+.cyber-sec-image7 {
+    width: 100%;
+    height: auto;
+    margin: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
+}
+
+.cyber-sec-image1:hover,
+.cyber-sec-image2:hover,
+.cyber-sec-image3:hover,
+.cyber-sec-image4:hover,
+.cyber-sec-image5:hover,
+.cyber-sec-image6:hover,
+.cyber-sec-image7:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.cyber-sec-image2 {
+    width: 30%;
+    float: right;
+}
+
+.cyber-sec-image7 {
+    object-fit: cover;
+}
+
+.cyber-sec-text {
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.cyber-sec-text p {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cyber-sec-content {
+    display: flex;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer.cyber-sec-footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #103741;
+    color: #fff;
+}
+
+footer.cyber-sec-footer:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.cyber-sec-container {
+    position: relative;
+}
+
+.cyber-sec-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Data/img/bg1.webp');
+    background-blend-mode: multiply;
+    opacity: 0.2;
+}
+
+.cyber-sec-content {
+    transform: rotate(-2deg);
+}
+
+.cyber-sec-image-container {
+    perspective: 1000px;
+}
+
+.cyber-sec-image-container img {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.cyber-sec-image-container img:hover {
+    transform: rotateY(180deg);
+}
+
+.cyber-sec-text h2 {
+    font-size: 2.5rem;
+    color: #103741;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cyber-sec-text p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.cyber-sec-content:last-child .cyber-sec-image-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cyber-sec-content:last-child .cyber-sec-image-container img {
+    width: calc(25% - 20px);
+    height: auto;
+    margin: 10px;
+}
+
+.cyber-sec-content:last-child .cyber-sec-image-container img:hover {
+    transform: scale(1.1);
+}
