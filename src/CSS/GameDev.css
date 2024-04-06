@@ -165,10 +165,6 @@ footer.game-dev-footer:hover {
     opacity: 0.2;
 }
 
-.game-dev-content {
-    transform: rotate(-2deg);
-}
-
 .game-dev-image-container {
     perspective: 1000px;
 }

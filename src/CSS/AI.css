@@ -52,57 +52,14 @@ body {
     }
 }
 
-.ai-image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1200px;
-    overflow: hidden;
-}
-
-.ai-image1,
-.ai-image2,
-.ai-image3,
-.ai-image4,
-.ai-image5,
-.ai-image6,
-.ai-image7 {
-    width: 100%;
-    height: auto;
-    margin: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
-    transition: transform 0.3s ease;
-}
-
-.ai-image1:hover,
-.ai-image2:hover,
-.ai-image3:hover,
-.ai-image4:hover,
-.ai-image5:hover,
-.ai-image6:hover,
-.ai-image7:hover {
-    transform: scale(1.05);
-    filter: brightness(1.2);
-}
-
-.ai-image2 {
-    width: 30%;
-    float: right;
-}
-
-.ai-image7 {
-    object-fit: cover;
-}
-
 .ai-text {
-    text-align: left;
+    text-align: justify;
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .ai-text p {
@@ -153,26 +110,29 @@ footer.ai-footer:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Data/img/bg1.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Data/img/bg5.jpeg');
     background-blend-mode: multiply;
     opacity: 0.2;
 }
 
-.ai-content {
-    transform: rotate(-2deg);
+
+.ai-button {
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-top: 20px;
 }
 
-.ai-image-container {
-    perspective: 1000px;
-}
-
-.ai-image-container img {
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease;
-}
-
-.ai-image-container img:hover {
-    transform: rotateY(180deg);
+.ai-button:hover {
+    background-color: darkblue;
+    border-color: darkblue;
 }
 
 .ai-text h2 {

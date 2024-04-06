@@ -165,9 +165,6 @@ footer.gdsc-footer:hover {
     opacity: 0.2;
 }
 
-.gdsc-content {
-    transform: rotate(-2deg);
-}
 
 .gdsc-image-container {
     perspective: 1000px;

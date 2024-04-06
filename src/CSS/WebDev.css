@@ -160,9 +160,6 @@ body {
     opacity: 0.2;
   }
   
-  .web-dev-content {
-    transform: rotate(-2deg);
-  }
   
   .web-dev-image-container {
     perspective: 1000px;

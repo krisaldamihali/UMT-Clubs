@@ -1,5 +1,5 @@
 {
-  "name": "swecc",
+  "name": "umt-clubs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -46,7 +46,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "SWECC",
+  "description": "UMT-Clubs",
   "main": "index.js",
   "author": "",
   "license": "ISC",

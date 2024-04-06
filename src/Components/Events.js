@@ -68,7 +68,7 @@ function Events() {
       <div className='calendar-section'>
         <h1 className='event-headers'>Upcoming Events</h1>
         <div align="center">
-          <iframe title='calendar' className="calendar" src="https://calendar.google.com/calendar/embed?src=swecc%40gmail.com&ctz=America%2FLos_Angeles" />
+          <iframe title='calendar' className="calendar" src="https://calendar.google.com/calendar/u/0/embed?src=info@umt.edu.al" />
         </div>
       </div>
 

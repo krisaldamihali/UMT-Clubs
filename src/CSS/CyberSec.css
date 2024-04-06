@@ -52,57 +52,14 @@ body {
     }
 }
 
-.cyber-sec-image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1200px;
-    overflow: hidden;
-}
-
-.cyber-sec-image1,
-.cyber-sec-image2,
-.cyber-sec-image3,
-.cyber-sec-image4,
-.cyber-sec-image5,
-.cyber-sec-image6,
-.cyber-sec-image7 {
-    width: 100%;
-    height: auto;
-    margin: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
-    transition: transform 0.3s ease;
-}
-
-.cyber-sec-image1:hover,
-.cyber-sec-image2:hover,
-.cyber-sec-image3:hover,
-.cyber-sec-image4:hover,
-.cyber-sec-image5:hover,
-.cyber-sec-image6:hover,
-.cyber-sec-image7:hover {
-    transform: scale(1.05);
-    filter: brightness(1.2);
-}
-
-.cyber-sec-image2 {
-    width: 30%;
-    float: right;
-}
-
-.cyber-sec-image7 {
-    object-fit: cover;
-}
-
 .cyber-sec-text {
-    text-align: left;
+    text-align: justify;
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cyber-sec-text p {
@@ -153,26 +110,30 @@ footer.cyber-sec-footer:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Data/img/bg1.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Data/img/bg6.jpeg');
     background-blend-mode: multiply;
     opacity: 0.2;
 }
 
-.cyber-sec-content {
-    transform: rotate(-2deg);
+
+
+.cyber-sec-button {
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-top: 20px;
 }
 
-.cyber-sec-image-container {
-    perspective: 1000px;
-}
-
-.cyber-sec-image-container img {
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease;
-}
-
-.cyber-sec-image-container img:hover {
-    transform: rotateY(180deg);
+.cyber-sec-button:hover {
+    background-color: darkblue;
+    border-color: darkblue;
 }
 
 .cyber-sec-text h2 {

@@ -158,10 +158,6 @@ footer.app-dev-footer:hover {
     opacity: 0.2;
 }
 
-.app-dev-content {
-    transform: rotate(-2deg);
-}
-
 .app-dev-image-container {
     perspective: 1000px;
 }
