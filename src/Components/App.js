@@ -19,9 +19,9 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Events" element={<Events />} />
           <Route path="/Clubs" element={<Clubs />} />
-          <Route path="/WebDevelopment" element={<WebDev />} /> 
+          <Route path="/web-development" element={<WebDev />} /> 
           <Route path="/GDSC" element={<GDSC />} /> 
-          <Route path="/AppDevelopment" element={<AppDev />} /> 
+          <Route path="/app-development" element={<AppDev />} /> 
           <Route path="/CyberSecurity" element={<CyberSec />} />
         </Routes>
       </div>
