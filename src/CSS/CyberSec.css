@@ -60,6 +60,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 2;
+    pointer-events: auto; 
 }
 
 .cyber-sec-text p {
@@ -115,8 +118,6 @@ footer.cyber-sec-footer:hover {
     opacity: 0.2;
 }
 
-
-
 .cyber-sec-button {
     background-color: blue;
     color: white;
@@ -129,6 +130,7 @@ footer.cyber-sec-footer:hover {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     margin-top: 20px;
+    z-index: 1; 
 }
 
 .cyber-sec-button:hover {

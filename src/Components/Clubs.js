@@ -25,7 +25,7 @@ const categories = [
     title: "Game Development",
     image: catg3Image,
     info: "Provides resources and guidance for developing digital games.",
-    link: "/game-development"
+    link: "https://clubs.umt.edu.al/game/index.html"
   },
   {
     title: "Cybersecurity",
@@ -37,7 +37,7 @@ const categories = [
     title: "AI",
     image: catg4Image,
     info: "A source for artificial intelligence science and AI application development.",
-    link: "/ai"
+    link: "https://aidevclub.wixsite.com/ai-developers-club"
   },
   {
     title: "GDSC",
