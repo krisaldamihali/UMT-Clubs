@@ -1,5 +1,4 @@
-// import '../CSS/App.css';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home.js';
 import Events from '../Components/Events.js';
 import About from './About.js';
@@ -12,7 +11,7 @@ import Navbar from './Navbar.js';
 
 function App() {
   return (
-    <HashRouter>
+    <Router>
       <Navbar />
       <div>
         <Routes>
@@ -20,23 +19,14 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Events" element={<Events />} />
           <Route path="/Clubs" element={<Clubs />} />
-          <Route path="/web-development" element={<WebDev />} /> 
-          <Route path="/gdsc" element={<GDSC />} /> 
-          <Route path="/app-development" element={<AppDev />} /> 
-          <Route path="/cybersecurity" element={<CyberSec />} />
+          <Route path="/WebDevelopment" element={<WebDev />} /> 
+          <Route path="/GDSC" element={<GDSC />} /> 
+          <Route path="/AppDevelopment" element={<AppDev />} /> 
+          <Route path="/CyberSecurity" element={<CyberSec />} />
         </Routes>
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
