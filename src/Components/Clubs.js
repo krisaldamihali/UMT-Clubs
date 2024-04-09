@@ -68,6 +68,17 @@ function Clubs() {
 }
 
 function Category({ title, image, info, link }) {
+  const isExternalLink = link.startsWith('http');
+  const linkComponent = isExternalLink ? (
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <button>Learn More</button>
+    </a>
+  ) : (
+    <Link to={link}>
+      <button>Learn More</button>
+    </Link>
+  );
+
   return (
     <div className="category">
       <div className="image-container">
@@ -75,9 +86,7 @@ function Category({ title, image, info, link }) {
       </div>
       <h3>{title}</h3>
       <p>{info}</p>
-      <Link to={link}>
-        <button>Learn More</button>
-      </Link>
+      {linkComponent}
     </div>
   );
 }
